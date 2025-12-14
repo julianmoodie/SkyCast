@@ -26,7 +26,7 @@ try {
 
 
 } catch {
-  output = "Error fetching weather data.";
+  output = "Error fetching weather data. Likely rate-limited";
 }
 
 export default function Page() {
@@ -37,3 +37,4 @@ export default function Page() {
     </main>
   );
 }
+
