@@ -28,7 +28,7 @@ export default async function Index() {
     weatherOut = `${weatherData.current_weather.temperature}°C`;
   } catch (error) {
     console.error(error);
-    weatherOut = "Error fetching weather";
+    weatherOut = "Error fetching weather data. Likely rate-limited";
   }
 
   return (
@@ -41,3 +41,4 @@ export default async function Index() {
     </main>
   );
 }
+
